@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit PAGE....</title>
+</head>
+
+<body>
+    <center>
+    <form action="/data" method="post">
+        <table border="1" style="color: rgb(218, 126, 60); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></table>>
+            <tr>
+                <td>hashtag</td>
+                <td><input type="text" value="<%= single.hashtag %>" name="hashtag"></td>
+            </tr>
+            <tr>
+                <td>Task Name</td>
+                <td><input type="text" value="<%= single.taskname %>" name="taskname"></td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td><input type="text" value="<%= single.status %>"name="status"></td>
+            </tr>
+            <tr>
+                <td>Edit</td>
+                <td><input type="text"value="<%= single.edit %>" name="edit"></td>
+            </tr>
+            <tr>
+                <td>Remove</td>
+                <td><input type="text"value="<%= single.remove %>" name="remove"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="edit"></td>
+            </tr>
+        </table>
+    </form>
+</center>
+</body>
+
+</html>
